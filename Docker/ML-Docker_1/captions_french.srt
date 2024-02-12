@@ -1,0 +1,212 @@
+1
+00:00:00,033 --> 00:00:04,471
+Maintenant, l’idée générale qui sous-tend les essais unitaires est que nous voulons affirmer que
+
+2
+00:00:04,471 --> 00:00:05,872
+quelque chose est vrai.
+
+3
+00:00:05,872 --> 00:00:10,143
+Nous nous assurons donc qu'une certaine condition est remplie.
+
+4
+00:00:10,276 --> 00:00:14,280
+Si c'est le cas, nous réussirons notre examen et nous pourrons passer à l'examen suivant.
+
+5
+00:00:14,481 --> 00:00:17,784
+Si ce n'est pas le cas, nous apportons des modifications à notre logiciel.
+
+6
+00:00:17,817 --> 00:00:22,756
+et nous continuons de le modifier jusqu'à ce que nous puissions passer le test.
+
+7
+00:00:23,023 --> 00:00:25,625
+Mais que testons-nous exactement?
+
+8
+00:00:26,092 --> 00:00:30,663
+Cela m'amène à ma superbe liste de vérification que vous pouvez trouver sur mon GitHub.
+
+9
+00:00:30,930 --> 00:00:35,235
+Je vais expliquer et démontrer la plupart des points de la liste de vérification, s’il vous plaît
+
+10
+00:00:35,235 --> 00:00:38,738
+n'hésitez pas à utiliser les timbres-temps pour sauter tout ce que vous savez déjà.
+
+11
+00:00:39,172 --> 00:00:42,776
+Maintenant, la première chose que nous testons est l'existence d'éléments.
+
+12
+00:00:43,043 --> 00:00:45,045
+Y a-t-il ou n'y a-t-il pas?
+
+13
+00:00:45,345 --> 00:00:49,282
+Ou encore, puis-je accéder à cet élément quand j'en ai besoin?
+
+14
+00:00:49,549 --> 00:00:52,852
+Ainsi, à ce stade, nous ne nous préoccupons pas vraiment du contenu.
+
+15
+00:00:53,053 --> 00:00:56,823
+Nous ne nous préoccupons que si nos classes, fonctions, actifs,
+
+16
+00:00:56,823 --> 00:00:59,726
+ou d'autres éléments logiciels se manifestent.
+
+17
+00:01:00,093 --> 00:01:01,694
+Voyons donc un exemple à cet égard.
+
+18
+00:01:01,694 --> 00:01:05,899
+Nous renommons notre test pour tester l'app underscore existe.
+
+19
+00:01:06,199 --> 00:01:08,435
+Et comment vérifions-nous si quelque chose existe?
+
+20
+00:01:08,835 --> 00:01:11,404
+Nous vérifions simplement s'il n'y a pas aucune.
+
+21
+00:01:11,671 --> 00:01:16,142
+Lorsqu'aucune ne représente l'absence de données ou simplement rien.
+
+22
+00:01:16,443 --> 00:01:19,579
+Pour cela, nous utiliserons une déclaration appelée self.
+
+23
+00:01:19,913 --> 00:01:24,584
+L'affirmation de Dot n'est pas connue dans l'affaire du chameau.
+
+24
+00:01:24,784 --> 00:01:27,720
+Comme vous pouvez le deviner, cette déclaration recevra :
+
+25
+00:01:27,720 --> 00:01:32,392
+notre app est un argument, mais comment exactement pouvons-nous cibler notre app?
+
+26
+00:01:32,859 --> 00:01:37,564
+Alors retournons à notre fichier my app dot p et naviguons ci-dessous.
+
+27
+00:01:37,797 --> 00:01:40,800
+Cherchez la commande qui exécute notre application,
+
+28
+00:01:40,800 --> 00:01:44,471
+ce que nous trouvons généralement à la fin du dossier.
+
+29
+00:01:44,471 --> 00:01:47,740
+enveloppé dans un if nom égal à la déclaration principale.
+
+30
+00:01:47,974 --> 00:01:52,212
+Dans notre cas, nous exécutons l'application avec Pythagoras et Dot Run.
+
+31
+00:01:52,412 --> 00:01:56,015
+Copier rapidement Pythagorean parce que nous ne voulons pas le dactylographier de nouveau.
+
+32
+00:01:56,316 --> 00:01:58,518
+et retour dans notre fichier d'essai.
+
+33
+00:01:58,518 --> 00:02:02,722
+Il créera une variable locale à l'intérieur de notre premier test appelé app
+
+34
+00:02:03,256 --> 00:02:06,826
+et nous l'affecterons à mon app Dot Pythagoras.
+
+35
+00:02:07,093 --> 00:02:10,263
+Rappelez-vous, parce que nous importons mon app,
+
+36
+00:02:10,263 --> 00:02:14,701
+nous devons spécifier mon app en face du Pythagorean Plus.
+
+37
+00:02:15,735 --> 00:02:17,070
+Maintenant, imprimons rapidement
+
+38
+00:02:17,070 --> 00:02:20,106
+juste parce que je veux avoir un coup d'oeil rapide.
+
+39
+00:02:20,874 --> 00:02:25,011
+Et enfin, nous l'intégrerons dans notre affirmation.
+
+40
+00:02:25,145 --> 00:02:26,312
+C'est ainsi qu'il y a.
+
+41
+00:02:26,312 --> 00:02:27,747
+App Awesome.
+
+42
+00:02:27,747 --> 00:02:28,681
+Maintenant, sauvons-la.
+
+43
+00:02:28,681 --> 00:02:31,451
+Nous allons rapidement l'exécuter avec Python.
+
+44
+00:02:31,484 --> 00:02:35,421
+Il suffit de souligner ma app dot p y et belle.
+
+45
+00:02:35,455 --> 00:02:38,224
+Nous avons passé un test et nous l'avons réussi.
+
+46
+00:02:38,224 --> 00:02:40,160
+Je n'ai pas eu l'occasion d'écouter cette vidéo et je n'ai pas eu l'occasion d'écouter cette vidéo.
+
+47
+00:02:40,160 --> 00:02:42,595
+Nous avons également imprimé notre objet app, qui
+
+48
+00:02:43,396 --> 00:02:46,099
+ne nous dit pas beaucoup, mais c'est comme ça.
+
+49
+00:02:46,399 --> 00:02:47,100
+Très bien.
+
+50
+00:02:47,100 --> 00:02:49,802
+Nous savons maintenant comment vérifier l'existence de classes.
+
+51
+00:02:49,969 --> 00:02:52,939
+Nous pouvons maintenant passer à d'autres éléments de la liste de contrôle.
+
+52
+00:02:52,939 --> 00:02:56,042
+Par exemple, les éléments de l’assurance-chômage également connus
+
+53
+00:02:56,042 --> 00:03:08,821
+en widgets.
+
