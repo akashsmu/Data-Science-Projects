@@ -19,3 +19,4 @@ def ingest_data(data_path:str) -> pd.DataFrame:
     except Exception as e:
         logging.error(f"Error while ingesting data: {e}")
         raise e 
+
