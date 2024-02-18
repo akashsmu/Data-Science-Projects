@@ -12,6 +12,7 @@ def evaluation_model(model:RegressorMixin,
                      X_test:pd.DataFrame,
                      y_test:pd.DataFrame,
                      ) -> Tuple[
+                        Annotated[float,'mse'],
                         Annotated[float,"r2_score"],
                         Annotated[float,"rmse"],
                      ]:
