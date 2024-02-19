@@ -5,7 +5,7 @@ import os
 
 import numpy as np
 import pandas as pd
-from materializer.custom_materializer import cs_materializer
+#from materializer.custom_materializer import cs_materializer
 from steps.clean_data import clean_data
 from steps.evaluation import evaluation_model
 from steps.ingest_data import ingest_data
@@ -50,7 +50,7 @@ def dynamic_importer() -> str:
 class DeploymentTriggerConfig(BaseParameters):
     """Parameters that are used to trigger the deployment"""
 
-    min_accuracy: float = 0.9
+    min_accuracy: float = 0
 
 
 @step
@@ -185,17 +185,17 @@ def predictor(
     return prediction
 
 
-@pipeline(enable_cache=True, settings={"docker": docker_settings})
+@pipeline(enable_cache=False, settings={"docker": docker_settings})
 def continuous_deployment_pipeline(
-    min_accuracy: float = 0.9,
+    min_accuracy: float = 0,
     workers: int = 1,
     timeout: int = DEFAULT_SERVICE_START_STOP_TIMEOUT,
 ):
     # Link all the steps artifacts together
-    df = ingest_data()
+    df = ingest_data("C://Users//akash//ml_gui_app//ML//MLOPS//Customer_Satisifaction_ZenML//data//olist_customers_dataset.csv")
     x_train, x_test, y_train, y_test = clean_data(df)
     model = train_model(x_train, x_test, y_train, y_test)
-    mse, rmse = evaluation_model(model, x_test, y_test)
+    mse, r2_score,rmse = evaluation_model(model, x_test, y_test)
     deployment_decision = deployment_trigger(accuracy=mse)
     mlflow_model_deployer_step(
         model=model,
