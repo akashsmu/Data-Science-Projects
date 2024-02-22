@@ -104,11 +104,3 @@ python run_pipeline.py
 python run_deployment.py
 ```
 
-## Resources & References
-
-A blog on [Predicting how a customer will feel about a product before they even ordered it](https://blog.zenml.io/customer_satisfaction/).
-
-You can watch a video by 
-Ayush Singh [video](https://youtu.be/L3_pFTlF9EQ).
-
-[customer-satisfaction-mlops](https://github.com/ayush714/customer-satisfaction-mlops)
