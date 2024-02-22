@@ -12,7 +12,7 @@ from zenml.integrations.mlflow.model_deployers.mlflow_model_deployer import (
 )
 from zenml.integrations.mlflow.services import MLFlowDeploymentService
 
-DEPLOY = "deploy"
+DEPLOY = "deployed"
 PREDICT = "predict"
 DEPLOY_AND_PREDICT = "deploy_and_predict"
 
