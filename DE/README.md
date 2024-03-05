@@ -44,7 +44,7 @@ The project is designed with the following components:
 1. Clone the repository:
 
    ```bash
-   git clone [https://github.com/airscholar/e2e-data-engineering.git](https://github.com/akashsmu/Data-Science-Projects.git)
+   git clone https://github.com/akashsmu/Data-Science-Projects.git
    ```
 
 2. Navigate to the project directory:
