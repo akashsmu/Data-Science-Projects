@@ -50,7 +50,7 @@ The project is designed with the following components:
 2. Navigate to the project directory:
 
    ```bash
-   cd e2e-data-engineering
+   cd DE
    ```
 
 3. Run Docker Compose to spin up the services:
