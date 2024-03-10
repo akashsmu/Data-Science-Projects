@@ -44,13 +44,13 @@ The project is designed with the following components:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/airscholar/e2e-data-engineering.git
+   git clone https://github.com/akashsmu/Data-Science-Projects.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd e2e-data-engineering
+   cd DE
    ```
 
 3. Run Docker Compose to spin up the services:
