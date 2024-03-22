@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Data-Science-Projects
+Version: 0.0.0
+Summary: A Python package for text summarization
+Home-page: https://github.com/akashsmu/Data-Science-Projects/tree/main/ML/NLP
+Author: SMU
+Author-email: smu.akash9@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+## Text-Summarization
