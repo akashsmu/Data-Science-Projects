@@ -7,7 +7,7 @@ const {
   GraphQLSchema,
 } = require("graphql");
 
-const clientType = new GraphQLObjectType({
+const clientTyp = new GraphQLObjectType({
   name: "Client",
   fields: () => ({
     id: { type: GraphQLID },
